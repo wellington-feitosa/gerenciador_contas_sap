@@ -1,5 +1,8 @@
 <?php
 
+//Includes obrigatórios
+include 'bootstrap';
+
 if (! isset($_REQUEST['loader'])) {
     die("Controller não encontrado!");
 }
