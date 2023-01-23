@@ -8,7 +8,7 @@ services:
     container_name: apache-php-ssl    
     restart: always    
     volumes:      
-      - C:\Users\Station493\OneDrive\Documentos\Código Fonte\PHP:/var/www/html/public:rw
+      - D:\Docker\scoa\gerenciador_contas_sap:/var/www/html:rw
     networks:
       - portal-allink    
     ports:

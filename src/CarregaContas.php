@@ -5,7 +5,10 @@ try {
     echo $file->getFileInfo();
 
     include_once "src/files/".$_REQUEST['interface'].".php";
-    loadView("");
+
+    $data['contas'] = $arr_contas;
+    
+    loadView("alterar_contas",$data);
     
 } catch (\Throwable $e) {
     die($e->getMessage());
