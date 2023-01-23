@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:    
+  apache-php:
+    image: wsfeitosa/apache-php-ssl    
+    build:
+      context: ./app
+    container_name: apache-php-ssl    
+    restart: always    
+    volumes:      
+      - C:\Users\Station493\OneDrive\Documentos\Código Fonte\PHP:/var/www/html/public:rw
+    networks:
+      - portal-allink    
+    ports:
+      - 8090:80
+      - 8091:443
+    expose:
+      - "80"
+      - "443"
+    
+networks:
+  portal-allink:
+    driver: bridge
