@@ -8,10 +8,3 @@ if (! isset($_REQUEST['loader'])) {
 }
 
 include_once __DIR__."/src/".$_REQUEST['loader'].".php";
-
-
-/**
-print "<pre>";
-var_dump(get_included_files());
-print "</pre>";
-*/

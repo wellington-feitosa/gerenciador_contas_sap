@@ -7,17 +7,10 @@ try {
     include_once "src/files/".$_REQUEST['interface'].".php";
 
     $data['contas'] = $arr_contas;
+    $data['interface'] = $_REQUEST['interface']; 
     
     loadView("alterar_contas",$data);
     
 } catch (\Throwable $e) {
     die($e->getMessage());
 }
-
-
-/**
-print "<pre>";
-var_dump(get_included_files());
-print_r($arr_contas);
-print "</pre>";
-*/

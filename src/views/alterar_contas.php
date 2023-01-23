@@ -29,6 +29,7 @@ foreach ($vars['contas'] as $id_taxa => $contas) {
 <body>    
     <form action="router.php" method="post">
         <input type="hidden" name="loader" id="loader" value="SalvarContas" />
+        <input type="hidden" name="interface" id="interface" value="<?=$vars['interface'];?>" />
         <div class="principal">
             <p class="titulo">Gerenciador de Contas Contábeis SAP</p>
                         

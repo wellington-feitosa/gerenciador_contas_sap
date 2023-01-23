@@ -18,9 +18,7 @@
                 <label class="label">Interface</label>
                 <select id='interface' name='interface'>
                     <option value="pagamento_fi_exp">Pagamento FI Exportação</option>
-                    <option value="pagamento_fi_imp">Pagamento FI Importação</option>
-                    <option>Teste 2</option>
-                    <option>Teste 3</option>
+                    <option value="pagamento_fi_imp">Pagamento FI Importação</option>                    
                 </select>
             </div>
             <div class="botoes">
